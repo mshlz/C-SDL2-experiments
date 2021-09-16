@@ -1,0 +1,11 @@
+{
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/SDL2/include"
+    ],
+    "files.associations": {
+        "engine.h": "c",
+        "utils.h": "c",
+        "sdl.h": "c",
+        "game.h": "c"
+    }
+}
