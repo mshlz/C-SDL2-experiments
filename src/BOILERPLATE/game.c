@@ -34,6 +34,6 @@ void render(engine_t *engine)
  * Run when an event is triggered (keyboard, mouse, etc)
  * Receives the SDL_Event from SDL_PoolEvent
  */
-void on_event(SDL_Event *event)
+void on_event(engine_t *engine, SDL_Event *event)
 {
 }

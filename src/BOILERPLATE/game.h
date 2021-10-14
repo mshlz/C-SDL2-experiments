@@ -6,11 +6,11 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "engine.h"
+#include "../shared/engine.h"
 
 void start(engine_t *engine);
 void update(engine_t *engine);
 void render(engine_t *engine);
-void on_event(SDL_Event *event);
+void on_event(engine_t *engine, SDL_Event *event);
 
 #endif

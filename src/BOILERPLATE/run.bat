@@ -1,5 +1,5 @@
 @ECHO OFF
-build\game.exe
+..\..\build\game.exe
 
 echo.
 pause

@@ -5,7 +5,7 @@
 #include <SDL2/SDL.h>
 
 #include "game.h"
-#include "engine.h"
+#include "../shared/engine.h"
 
 #define TITLE "Game"
 #define WIDTH 600
