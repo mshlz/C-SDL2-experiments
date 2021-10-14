@@ -47,7 +47,7 @@ engine_t *create_engine(
     void (*start)(engine_t *engine),
     void (*update)(engine_t *engine),
     void (*render)(engine_t *engine),
-    void (*on_event)(SDL_Event *event))
+    void (*on_event)(engine_t *engine, SDL_Event *event))
 {
     engine_t *engine = create_engine_without_handlers(title, width, height, SDL_Window_flags);
 
@@ -73,7 +73,7 @@ int run_engine(engine_t *engine)
     {
         while (SDL_PollEvent(&event) != 0)
         {
-            engine->on_event(&event);
+            engine->on_event(engine, &event);
 
             if (event.type == SDL_QUIT)
             {
